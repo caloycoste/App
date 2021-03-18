@@ -1,7 +1,8 @@
 /* eslint-disable prettier/prettier */
 import React, { useState, useEffect } from 'react'
+import { TouchableOpacity } from 'react-native'
 import { FlatList } from 'react-native'
-import { View, Text, ActivityIndicator } from 'react-native'
+import { View, Text, ActivityIndicator, StyleSheet } from 'react-native'
 
 function Posts() {
 
@@ -16,15 +17,17 @@ function Posts() {
     }, [])
 
     return (
-        <View>
+        <View style={styles.container}>
             {isLoading ? <View><ActivityIndicator size='large' animating /></View> 
             : <View>
                 <FlatList
                     data={data}
                     renderItem={({ item }) => (
                         <View>
-                            <Text>{item.title}</Text>
-                            <Text>{item.details}</Text>
+                            <TouchableOpacity>
+                            <Text style={styles.title}>{item.title}</Text>
+                            </TouchableOpacity>
+                            <Text style={styles.details}>{item.details}</Text>
                         </View>
                     )} />
             </View>}
@@ -32,8 +35,33 @@ function Posts() {
 
 
     )
+}
+
+const styles = StyleSheet.create ({
+    container: {
+        flex:1,
+        paddingTop:20,
+        paddingLeft:20,
+    },
+
+    title: {
+        fontSize:15,
+        fontWeight:'bold',
+        marginBottom:10,
+        color:'teal'
+    },
+
+    details: {
+        textAlign:'justify',
+        marginBottom:10,
+        paddingRight:20,
+
+    }
 
 
 }
+
+
+)
 
 export default Posts
