@@ -16,10 +16,14 @@ function App() {
  
       <NavigationContainer>
         <stack.Navigator initialRouteName='Home'>
-          <stack.Screen name='Home' component={Home} />
-          <stack.Screen name='About' component={About} />
-          <stack.Screen name='Sign Up' component={SignUp}/>
-          <stack.Screen name='Posts' component={Posts}/>
+          <stack.Screen name='Home' component={Home} 
+            options={{title: 'myApp'}}/>
+          <stack.Screen name='About' component={About} 
+            options={{title: 'About'}}/>
+          <stack.Screen name='Sign Up' component={SignUp}
+            options={{title: 'Sign Up'}}/>
+          <stack.Screen name='Posts' component={Posts}
+            options={{title: 'Feed'}}/>
         </stack.Navigator>
       </NavigationContainer>
 
