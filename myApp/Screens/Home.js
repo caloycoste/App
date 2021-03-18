@@ -24,7 +24,7 @@ function Home({ navigation }) {
             </TouchableOpacity>
             <TouchableOpacity style={styles.loginBtn}
                 onPress={() => {
-                    navigation.navigate('About')
+                    navigation.navigate('Posts')
                 }}>
                 <Text style={styles.loginBtnText}>Login</Text>
             </TouchableOpacity>
