@@ -6,8 +6,7 @@ function Messages() {
     return (
         <View>
             <Text>
-            
-
+            Messages
             </Text>
         </View>
     )

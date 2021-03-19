@@ -5,7 +5,6 @@ import { Icon } from 'react-native-elements'
 import History from '../Components/History'
 import Missions from '../Components/Missions'
 import Search from '../Components/Search'
-import Messages from '../Components/Messages'
 
 function SpaceX() {
 
@@ -31,12 +30,6 @@ function SpaceX() {
                     tabBarIcon: ({color}) => 
                     <Icon name='search' type='font-awesome' color={color}/>
                 }}/>
-            <tab.Screen name='Messages' component={Messages} 
-                options={{
-                    tabBarIcon: ({color}) => 
-                    <Icon name='envelope' type='font-awesome' color={color}/>
-                }}
-            />
         </tab.Navigator>
 
     )
