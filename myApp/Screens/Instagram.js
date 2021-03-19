@@ -2,15 +2,15 @@
 import React from 'react'
 import {View, Text} from 'react-native'
 
-function Messages() {
+function Instagram() {
     return (
         <View>
             <Text>
-                Messages
-
+                Instagram
             </Text>
         </View>
+        
     )
 }
 
-export default Messages
+export default Instagram

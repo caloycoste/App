@@ -1,7 +1,6 @@
 /* eslint-disable prettier/prettier */
-import React, {useState} from 'react'
-import { Keyboard } from 'react-native'
-import { View, Text, TouchableOpacity, TextInput, StyleSheet, Modal } from 'react-native'
+import React from 'react'
+import { View, Text, TouchableOpacity, TextInput, StyleSheet } from 'react-native'
 import { Icon } from 'react-native-elements'
 
 
@@ -25,7 +24,7 @@ function Home({ navigation }) {
             </TouchableOpacity>
             <TouchableOpacity style={styles.loginBtn}
                 onPress={() => {
-                    navigation.navigate('Posts')
+                    navigation.navigate('myApps')
                 }}>
                 <Text style={styles.loginBtnText}>Login</Text>
             </TouchableOpacity>

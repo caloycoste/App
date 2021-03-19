@@ -2,12 +2,12 @@
 import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { Icon } from 'react-native-elements'
-import History from './History'
-import Missions from './Missions'
-import Search from './Search'
-import Messages from './Messages'
+import History from '../Components/History'
+import Missions from '../Components/Missions'
+import Search from '../Components/Search'
+import Messages from '../Components/Messages'
 
-function Posts() {
+function SpaceX() {
 
     const tab = createBottomTabNavigator();
 
@@ -42,4 +42,4 @@ function Posts() {
     )
 }
 
-export default Posts
+export default SpaceX
