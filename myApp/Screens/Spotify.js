@@ -5,7 +5,7 @@ import { Icon } from 'react-native-elements'
 
 function Spotify() {
     return (
-        <View style={styles.container}>
+        <View style={{backgroundColor:'#191414'}}>
             <View style={styles.welcomeContainer}>
                 <Icon name='spotify' type='font-awesome'
                     color='white' size={50} marginBottom={20} />
@@ -35,9 +35,6 @@ function Spotify() {
 }
 
 const styles = StyleSheet.create({
-    container: {
-        backgroundColor:'#191414'
-    },
 
     welcomeContainer: {
         alignItems: 'center',
