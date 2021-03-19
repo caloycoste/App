@@ -1,11 +1,12 @@
 /* eslint-disable prettier/prettier */
-import React from 'react'
+import React, {useState} from 'react'
 import { Keyboard } from 'react-native'
-import { View, Text, TouchableOpacity, TextInput, StyleSheet } from 'react-native'
+import { View, Text, TouchableOpacity, TextInput, StyleSheet, Modal } from 'react-native'
 import { Icon } from 'react-native-elements'
 
 
 function Home({ navigation }) {
+    
     return (
         <View style={styles.container}>
             <Text style={styles.welcomeText}>Welcome to myApp!</Text>
@@ -42,10 +43,10 @@ function Home({ navigation }) {
 
             <View style={styles.signup}>
                 <Text style={styles.signupText}>Don't have an account yet?</Text>
-                <TouchableOpacity style={styles.signupBtn}
+                <TouchableOpacity
                     onPress={() => {
                         navigation.navigate('Sign Up')
-                    }}><Text>Sign up</Text></TouchableOpacity>
+                    }}><Text style={styles.signupBtn}>Sign up</Text></TouchableOpacity>
             </View>
 
         </View>
@@ -125,14 +126,13 @@ const styles = StyleSheet.create({
 
     signupText: {
         marginHorizontal: 5
+    },
+
+    signupBtn: {
+        color:'teal'
     }
 
-
-
-
 }
-
-
 )
 
 export default Home
