@@ -7,6 +7,10 @@ import Home from './Screens/Home'
 import About from './Screens/About'
 import SignUp from './Screens/SignUp'
 import myApps from './Screens/myApps'
+import Facebook from './Screens/Facebook'
+import Twitter from './Screens/Twitter'
+import Instagram from './Screens/Instagram'
+import Spotify from './Screens/Spotify'
 import SpaceX from './Screens/SpaceX'
 
 
@@ -25,6 +29,14 @@ function App() {
           options={{ title: 'Sign Up' }} />
         <stack.Screen name='myApps' component={myApps}
           options={{ title: 'myApps' }} />
+        <stack.Screen name='Facebook' component={Facebook}
+          options={{ title: 'Facebook' }} />
+        <stack.Screen name='Twitter' component={Twitter}
+          options={{ title: 'Twitter' }} />
+        <stack.Screen name='Instagram' component={Instagram}
+          options={{ title: 'Instagram' }} />
+        <stack.Screen name='Spotify' component={Spotify}
+          options={{ title: 'Spotify' }} />
         <stack.Screen name='SpaceX' component={SpaceX}
           options={{ title: 'SpaceX' }} />
       </stack.Navigator>
