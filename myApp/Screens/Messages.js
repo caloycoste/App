@@ -2,15 +2,15 @@
 import React from 'react'
 import {View, Text} from 'react-native'
 
-function Capsules() {
+function Messages() {
     return (
         <View>
-        <Text>
-            Capsules
-        </Text>
+            <Text>
+                Messages
 
+            </Text>
         </View>
     )
 }
 
-export default Capsules
+export default Messages
