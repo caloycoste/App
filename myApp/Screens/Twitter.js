@@ -14,11 +14,14 @@ function Twitter() {
                     <Text style={styles.btnText}>Create account</Text>
                 </TouchableOpacity>
             </View>
-            <View>
-                <Text>Have an account already?</Text>
+
+            <View style={styles.loginContainer}>
+                <View style={styles.loginSubContainer}>
+                <Text style={{color: '#aab8c2', fontSize:15}}>Have an account already?</Text>
                 <TouchableOpacity>
-                    <Text>Log in</Text>
+                    <Text style={{color:'#1da1f2', fontSize:15}}> Log in</Text>
                 </TouchableOpacity>
+                </View>
             </View>
         </View>
     )
@@ -36,7 +39,7 @@ const styles = StyleSheet.create({
         display:'flex',
         alignItems:'center',
         justifyContent:'center',
-        marginVertical:150
+        marginVertical:160
     },
 
     welcomeText: {
@@ -61,7 +64,20 @@ const styles = StyleSheet.create({
         fontSize:20,
         fontWeight:'bold',
         textAlign:'center',
-        
+    },
+
+    loginContainer: {
+        flex:1,
+        justifyContent:'flex-end'
+    },
+
+    loginSubContainer: {
+        position:'absolute',
+        bottom:0,
+        display:'flex',
+        flexDirection:'row',
+        marginHorizontal:45,
+        marginBottom:20,
     }
 })
 
